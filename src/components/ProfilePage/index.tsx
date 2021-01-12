@@ -14,6 +14,7 @@ import {
 } from './styles';
 
 const ProfilePage: React.FC = () => {
+  //essa banner e a parte azul da tela
   return (
     <Container>
       <Banner>
@@ -23,30 +24,30 @@ const ProfilePage: React.FC = () => {
       <ProfileData>
         <EditButton outlined>Editar perfil</EditButton>
 
-        <h1>Guilherme Rodz</h1>
-        <h2>@guilherme_rodz</h2>
+        <h1>Arildo Magno</h1>
+        <h2>@ArildoMagno</h2>
 
         <p>
-          Developer at <a href="https://rocketseat.com.br">@Rocketseat</a>
+          Developer at <a href="https://github.com/ArildoMagno">@ArildoMagno</a>
         </p>
 
         <ul>
           <li>
             <LocationIcon />
-            São Paulo, Brasil
+           Formiga, Minas Gerais
           </li>
           <li>
             <CakeIcon />
-            Nascido(a) em 21 de junho de 2001
+            Nascido(a) em 14 de outubro de 1999
           </li>
         </ul>
 
         <Followage>
           <span>
-            seguindo <strong>94</strong>
+            seguindo <strong>75</strong>
           </span>
           <span>
-            <strong>672 </strong> seguidores
+            <strong>38 </strong> seguidores
           </span>
         </Followage>
       </ProfileData>

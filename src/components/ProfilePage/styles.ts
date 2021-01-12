@@ -2,9 +2,11 @@ import styled, { css } from 'styled-components';
 
 import { LocationOn, Cake } from '../../styles/Icons';
 import Button from '../Button';
+import AvatarNormal from '../../assets/fotos/perfildaftnormal.png';
 
 export const Container = styled.div`
   display: flex;
+  //para colocar na forma de coluna
   flex-direction: column;
   max-height: 100%;
   overflow-y: auto;
@@ -31,6 +33,8 @@ export const Avatar = styled.div`
   position: absolute;
   bottom: max(-60px, -10vw);
   left: 15px;
+  
+  background-image: url(${AvatarNormal});
 `;
 
 export const ProfileData = styled.div`
@@ -38,10 +42,12 @@ export const ProfileData = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+  //personalizando o h1 dentro do ProfileData
   > h1 {
     font-weight: bold;
     font-size: 19px;
   }
+  //segue a ideia do h1 > (precisa do > no typescript)
   > h2 {
     font-weight: normal;
     font-size: 15px;
@@ -70,12 +76,14 @@ export const ProfileData = styled.div`
   }
 `;
 
+//para poder fazer o css dos icones na mão, basta importar ele lá tb da propria lib
 const iconCSS = css`
   width: 20px;
   height: 20px;
   color: var(--gray);
 `;
 
+//os icones dessa parte
 export const LocationIcon = styled(LocationOn)`
   ${iconCSS}
 `;
@@ -100,6 +108,7 @@ export const EditButton = styled(Button)`
   right: 7px;
   padding: 4px 16px;
   font-size: 13px;
+   //responsividade apartir de 320
   @media (min-width: 320px) {
     top: 10px;
     padding: 10px 19px;

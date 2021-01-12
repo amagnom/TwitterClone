@@ -13,12 +13,14 @@ export const Container = styled.div`
 
   //aqui é um calculo basicamente, tamanho minimo é 601, mas se tiver abaixo disso fica com 100
   width: min(601px, 100%);
+  //media para fazer a responsividade, apartir de 500
   @media (min-width: 500px) {
     border-left: 1px solid var(--outline);
     border-right: 1px solid var(--outline);
   }
 `;
 
+//Position sticky é para ele ficar fixo
 export const Header = styled.div`
   z-index: 2;
   position: sticky;
@@ -70,11 +72,15 @@ export const BottomMenu = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 8px min(46px, max(10vw, 10px));
+  
+  //com o @media que vamos controlar o lance do tamanho da tela, ali esta, apartir de 500 px, vai setar as configs:
   @media (min-width: 500px) {
     display: none;
   }
 `;
 
+//Um CSS para todos o icons de uma vez
+//e chama ele dentro de cada um dos icons
 const iconCSS = css`
   width: 31px;
   height: 31px;

@@ -2,7 +2,7 @@ import React from 'react';
 import StickyBox from 'react-sticky-box';
 
 import List from '../List';
-import FollowSuggestion from '../FollowSuggestion';
+import FollowSuggestion from '../FollowSugestion';
 import News from '../News';
 
 import {
@@ -27,28 +27,32 @@ const SideBar: React.FC = () => {
             title="Talvez você curta"
             elements={[
               <FollowSuggestion
-                name="Luiz Batanero"
-                nickname="@luizbatanero"
+                name="Galo Galinacio"
+                nickname="@galoGalinacio"
               />,
-              <FollowSuggestion name="Luke Morales" nickname="@lukemorales" />,
+              <FollowSuggestion 
+              name="Coelho Pernalonga" 
+              nickname="@pernalongaCoelho" 
+             />,
+
               <FollowSuggestion
-                name="Camila Magalhães"
-                nickname="@camilaamgl"
+                name="Johnny  Bravo"
+                nickname="@bravoJohnny"
               />,
             ]}
           />
           <List
             title="O que está acontecendo"
             elements={[
-              <News />,
-              <News />,
-              <News />,
-              <News />,
-              <News />,
-              <News />,
-              <News />,
-              <News />,
-              <News />,
+              <News 
+              area="Assuntos do momento no Brasil"
+              noticia="Brail ganha algo"/>,
+              <News 
+              area="Assuntos do momento no Brasil"
+              noticia="Dota cresce no Brasil"/>,
+              <News 
+              area="Assuntos do momento no Mundo"
+              noticia="Programadores estao descontentes"/>
             ]}
           />
         </Body>

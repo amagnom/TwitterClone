@@ -2,6 +2,10 @@ import styled, { css } from 'styled-components';
 
 import { Chat, Rocketseat, Favorite } from '../../styles/Icons';
 
+import AvatarPequena from '../../assets/fotos/perfildaftpequena.png';
+import TweetPatolino from '../../assets/fotos/tweetpatolino.png';
+
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -41,6 +45,7 @@ export const Avatar = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  background-image: url(${AvatarPequena})
 `;
 export const Content = styled.div`
   display: flex;
@@ -91,6 +96,7 @@ export const ImageContent = styled.div`
   &:hover {
     opacity: 0.7;
   }
+  background-image: url(${TweetPatolino});
 `;
 
 export const Icons = styled.div`
@@ -100,6 +106,7 @@ export const Icons = styled.div`
   flex-wrap: wrap;
   margin: 11px auto 0;
   width: 100%; /** Mobile */
+   //responsividade apartir de 330
   @media (min-width: 330px) {
     width: 63%;
   }

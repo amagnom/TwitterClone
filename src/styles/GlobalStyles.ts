@@ -1,14 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  //todos elementos da pagina
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--primary);
+    color: var(--white);
   }
-  //html e body
   html, body, #root {
     max-height: 100vh;
     max-width: 100vw;
@@ -23,7 +21,6 @@ export default createGlobalStyle`
   html {
     background: var(--primary);
   }
-  //cores definidas
   :root {
     --primary: #000;
     --secondary: #15181C;

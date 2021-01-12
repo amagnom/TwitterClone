@@ -4,6 +4,7 @@ import { Search } from '../../styles/Icons';
 
 export const Container = styled.div`
   display: none;
+   //responsividade apartir de 1000
   @media (min-width: 1000px) {
     display: flex;
     flex-direction: column;

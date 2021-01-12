@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 
+import AvatarPequena from '../../assets/fotos/perfildaftpequena.png';
 import {
   Home,
   Notifications,
@@ -12,6 +13,7 @@ import {
 
 export const Container = styled.div`
   display: none;
+  //responsividade apartir de 500
   @media (min-width: 500px) {
     display: flex;
     flex-direction: column;
@@ -29,6 +31,7 @@ export const Topside = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+   //responsividade apartir de 1280 aplica isso
   @media (min-width: 1280px) {
     align-items: flex-start;
   }
@@ -50,6 +53,7 @@ export const MenuButton = styled.button`
   > span {
     display: none;
   }
+   //responsividade apartir de 1280
   @media (min-width: 1280px) {
     > span {
       display: inline;
@@ -71,6 +75,7 @@ export const MenuButton = styled.button`
     > span {
       display: none;
     }
+     //responsividade apartir de 1280
     @media (min-width: 1280px) {
       width: 100%;
       height: unset;
@@ -128,11 +133,12 @@ export const Avatar = styled.div`
   height: 39px;
   flex-shrink: 0;
   border-radius: 50%;
-  background: var(--gray);
+  background-image: url(${AvatarPequena});
 `;
 
 export const ProfileData = styled.div`
   display: none;
+   //responsividade apartir de 1280
   @media (min-width: 1280px) {
     display: flex;
     flex-direction: column;
@@ -146,6 +152,7 @@ export const ProfileData = styled.div`
 
 export const ExitIcon = styled(ExitToApp)`
   display: none;
+   //responsividade apartir de 1280
   @media (min-width: 1280px) {
     display: inline-block;
     width: 25px;
